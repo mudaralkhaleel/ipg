@@ -1,0 +1,31 @@
+Start
+
+Input n (num)
+
+function find_twin_primes(n):
+
+    if n % 2 != 0:
+
+        return "العدد المدخل ليس عدد زوجي"
+        
+    x = findNextPrime(2)
+
+    while (x < n/2):
+
+        y = n - x
+
+        if (isPrime(x) and isPrime(y)):
+
+            Output x and y
+
+            exit loop
+
+        end if
+
+        x = findNextPrime(x)
+
+    end while
+
+find_twin_primes(n)
+
+Stop
